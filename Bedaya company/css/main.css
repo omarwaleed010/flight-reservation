@@ -1,0 +1,184 @@
+.navbar {
+  padding: 15px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  /* تأثير ضبابي */
+  transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar-brand img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  /* للتأكد من أن الصورة لا تتشوه */
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #f39c12;
+  /* تغيير اللون عند التمرير */
+  transform: translateY(-3px);
+  /* تحريك الرابط للأعلى عند التمرير */
+}
+
+.navbar-toggler-icon {
+  background-color: #fff;
+  /* لضمان وضوح الزر */
+}
+
+.navbar.fixed-top {
+  background-color: rgba(0, 0, 0, 0.75);
+  /* خلفية شفافة */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* إضافة تأثير الشفافية عند التمرير */
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* تصميم القسم الرئيسي (home) */
+.home {
+  background-image: url('../imgs/WhatsApp\ Image\ 2025-01-25\ at\ 19.56.04_7a0b7bb4.jpg');
+  /* استبدل هذا بالرابط المناسب للصورة الخلفية */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  /* تغطي الشاشة بالكامل */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+.bg-black.bg-opacity-75 {
+  background-color: rgba(0, 0, 0, 0.75);
+  /* خلفية سوداء مع شفافية */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+svg {
+  width: 50%;
+  /* عرض أكبر للـ SVG */
+  height: auto;
+  font-family: "Russo One", sans-serif;
+}
+
+svg text {
+  letter-spacing: 2px;
+  /* يمكنك زيادة هذه القيمة حسب الحاجة */
+  animation: stroke 5s infinite alternate;
+  stroke-width: 2;
+  stroke: #eff0f1;
+  font-size: 8vw;
+  /* حجم الخط */
+}
+
+svg text:nth-of-type(2) {
+  animation: stroke 5s infinite alternate;
+  stroke-width: 2;
+  stroke: #eff0f1;
+}
+
+.btn1 {
+  width: 250px;
+}
+
+
+#last {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+#last .text span {
+  font-size: 1rem;
+}
+
+#last .text span .fw-bold {
+  color: #f39c12;
+  
+}
+
+/* تحسين عرض الفورم ليتناسب مع الشاشات الصغيرة */
+#visaForm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#visaForm .d-flex {
+  flex: 1 1 45%;  /* تأكد من أن كل عنصر في الفورم يأخذ 45% من العرض */
+  min-width: 300px;
+}
+
+#visaForm select {
+  width: 100%;  /* تأكد من أن القوائم المنسدلة تكون مرنة */
+}
+
+#visaForm .btn1 {
+  width: 100%;  /* اجعل الزر يأخذ كامل العرض في الأجهزة الصغيرة */
+}
+
+@media (max-width: 767px) {
+  #visaForm {
+    flex-direction: column;
+  }
+  .visa-requirements {
+    margin-bottom: 1.5rem; /* إضافة مسافة بين العناصر */
+  }
+}
+
+@media (max-width: 576px) {
+  .head h1 {
+    font-size: 1.5rem; /* تصغير حجم العنوان في الشاشات الصغيرة */
+  }
+
+  .head p {
+    font-size: 1rem; /* تصغير حجم النصوص في الشاشات الصغيرة */
+  }
+  
+  .visa-option {
+    font-size: 0.875rem; /* تصغير حجم النص في الخيارات */
+  }
+}
+

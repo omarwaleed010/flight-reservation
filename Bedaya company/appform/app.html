@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <title>Application form</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container">
+            <a class="navbar-brand text-light" href="#">Bedaya company</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <div class="d-flex align-items-center me-3">
+                        <a class="nav-link text-light fs-5 fw-lighter" href="#"><i
+                                class="fa-solid fa-clipboard-check"></i></a>
+                        <a class="nav-link text-light fs-5 fw-lighter" href="#">Check Status</a>
+                    </div>
+
+                    <div class="d-flex align-items-center me-3">
+                        <a class="nav-link text-light fs-5 fw-lighter" href="#"><i class="fa-solid fa-globe"></i></a>
+                        <a class="nav-link text-light fs-5 fw-lighter" href="#">EN</a>
+                        <span class="nav-link text-light fs-5 fw-lighter">|</span>
+                        <a class="nav-link text-light fs-5 fw-lighter" href="#">USD</a>
+                        <span class=" nav-link text-light fs-5 fw-lighter">$</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <form method="post" action="../payment/payment.html">
+        <div class="container bg-light p-5">
+
+
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center text-primary mb-4">Travel Details</h2>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <h4 class="fs-5">Planned date of travel</h4>
+                    <div class="d-flex gap-3">
+                        <select class="form-select shadow-sm py-2 px-3" aria-label="Day" required>
+                            <option selected>Day</option>
+
+                            <!-- Day Options -->
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+
+                            <!-- More Day Options... -->
+                        </select>
+
+                        <select class="form-select shadow-sm py-2 px-3" aria-label="Month" required>
+                            <option selected>Month</option>
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+
+                            <!-- More Month Options... -->
+                        </select>
+
+                        <select class="form-select shadow-sm py-2 px-3" aria-label="Year" required>
+                            <option selected>Year</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <option value="2030">2030</option>
+                            <option value="2031">2031</option>
+                            <option value="2032">2032</option>
+                            <option value="2033">2033</option>
+                            <option value="2034">2034</option>
+                            <option value="2035">2035</option>
+
+                            <!-- More Year Options... -->
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <h4 class="fs-5">Purpose for travel</h4>
+                    <select class="form-select shadow-sm py-2 px-3" aria-label="Purpose" required>
+                        <option value="Tourism" selected>Tourism</option>
+                        <option value="Business">Business</option>
+                        <option value="Transit">Transit</option>
+                        <option value="Family visit">Family visit</option>
+                        <option value="Culture/sport">Culture/sport</option>
+
+                        <!-- Purpose Options -->
+                    </select>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <h4 class="fs-5">Nationality</h4>
+                    <select class="form-select shadow-sm py-2 px-3" aria-label="Nationality" required>
+                        <option selected>Select nationality</option>
+                        <option value="Albania">Albania</option>
+                        <option value="Armenia">Armenia</option>
+                        <option value="Austria">Austria</option>
+                        <option value="Azerbaijan">Azerbaijan</option>
+                        <option value="Belarus">Belarus</option>
+                        <option value="Belgium">Belgium</option>
+                        <option value="Bolivia">Bolivia</option>
+                        <option value="Bulgaria">Bulgaria</option>
+                        <option value="Croatia">Croatia</option>
+                        <option value="Ecuador">Ecuador</option>
+                        <option value="Estonia">Estonia</option>
+                        <option value="Finland">Finland</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Hungary">Hungary</option>
+                        <option value="Iceland">Iceland</option>
+                        <option value="India">India</option>
+                        <option value="Ireland">Ireland</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Kazakhstan">Kazakhstan</option>
+                        <option value="Korea, Republic of">Korea, Republic of</option>
+                        <option value="Latvia">Latvia</option>
+                        <option value="Lithuania">Lithuania</option>
+                        <option value="Luxembourg">Luxembourg</option>
+                        <option value="Macedonia">Macedonia</option>
+                        <option value="Malaysia">Malaysia</option>
+                        <option value="Malta">Malta</option>
+                        <option value="Mexico">Mexico</option>
+                        <option value="Moldova">Moldova</option>
+                        <option value="Monaco">Monaco</option>
+                        <option value="Montenegro">Montenegro</option>
+                        <option value="Netherlands">Netherlands</option>
+                        <option value="Oman">Oman</option>
+                        <option value="Paraguay">Paraguay</option>
+                        <option value="Peru">Peru</option>
+                        <option value="Poland">Poland</option>
+                        <option value="Portugal">Portugal</option>
+                        <option value="Romania">Romania</option>
+                        <option value="Russia">Russia</option>
+                        <option value="Saudi Arabia">Saudi Arabia</option>
+                        <option value="Serbia">Serbia</option>
+                        <option value="Singapore">Singapore</option>
+                        <option value="Slovakia">Slovakia</option>
+                        <option value="Slovenia">Slovenia</option>
+                        <option value="South Africa">South Africa</option>
+                        <option value="Taiwan">Taiwan</option>
+                        <option value="United Arab Emirates">United Arab Emirates</option>
+                        <option value="Uruguay">Uruguay</option>
+
+                        <!-- Nationality Options -->
+                    </select>
+                </div>
+            </div>
+
+            <!-- Applicant's details -->
+            <div class="row mt-5">
+                <div class="col-md-6 mb-4">
+                    <h4 class="fs-5">Given Name(s)</h4>
+                    <input type="text" class="form-control shadow-sm py-2 px-3" placeholder="First" required>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <h4 class="fs-5">Surname(s)</h4>
+                    <input type="text" class="form-control shadow-sm py-2 px-3" placeholder="Last" required>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <h4 class="fs-5">Date of Birth</h4>
+                    <div class="d-flex gap-3">
+                        <select class="form-select shadow-sm py-2 px-3" aria-label="Day" required>
+                            <option selected>Day</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+
+                            <!-- Day Options -->
+                        </select>
+
+                        <select class="form-select shadow-sm py-2 px-3" aria-label="Month" required>
+                            <option selected>Month</option>
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+
+                            <!-- Month Options -->
+                        </select>
+
+                        <select class="form-select shadow-sm py-2 px-3" aria-label="Year" required>
+                            <option selected>Year</option>
+                            <option value="2025">2025</option>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+
+                            <!-- Year Options -->
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <h4 class="fs-5">Passport Number</h4>
+                    <input type="text" class="form-control shadow-sm py-2 px-3" placeholder="Passport Number" required>
+                </div>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="row mt-5">
+                <div class="col-md-6 mb-4">
+                    <h4 class="fs-5">Email Address</h4>
+                    <input type="email" class="form-control shadow-sm py-2 px-3" placeholder="email@example.com"
+                        required>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <h4 class="fs-5">Contact Phone Number</h4>
+                    <input type="tel" class="form-control shadow-sm py-2 px-3" placeholder="123-456-7890" required>
+                </div>
+            </div>
+
+            <!-- Insurance Section -->
+            <div class="row mt-5">
+                <div class="col-md-6 mb-4">
+                    <h4 class="fs-5">Would you like to add insurance?</h4>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="insurance" id="insuranceYes" required>
+                        <label class="form-check-label" for="insuranceYes">Yes</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="insurance" id="insuranceNo" checked required>
+                        <label class="form-check-label" for="insuranceNo">No</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-6 mb-4">
+                    <h4 class="fs-5 text-dark">Terms</h4>
+
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            I accept the Terms and Conditions.
+                        </label>
+                    </div>
+
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked required>
+                        <label class="form-check-label" for="flexCheckChecked">
+                            In accordance with article 9 § 2 letter (a) of the General Regulation on the protection of
+                            personal data of 27 April 2016 (Journal of Laws EU. L 2016 No. 119), I agree to processing
+                            my
+                            personal data, including biometric data (passport photograph) by IVS sp. z o.o. sp. k. (LLC
+                            LLP), in order to submit a visa application on my behalf (execution of the visa brokerage
+                            contract).
+                        </label>
+                    </div>
+
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2" checked
+                            required>
+                        <label class="form-check-label" for="flexCheckChecked2">
+                            I consent to receiving, via electronic communication means (email), commercial information
+                            from
+                            INTERNATIONAL VISA SERVICE sp. z o.o. sp.k. regarding its own services as well as services
+                            or
+                            goods of its Trusted Partners, in accordance with the Act of 18 July 2002 on the provision
+                            of
+                            services by electronic means (consolidated text: Journal of Laws of 2020, item 344, as
+                            amended),
+                            and to the use of telecommunications terminal equipment and automatic calling systems for
+                            the
+                            purposes of direct marketing or sending commercial information regarding its own services as
+                            well as services or goods of its Trusted Partners to my email address, in accordance with
+                            the
+                            Act of 16 July 2004 - Telecommunications Law (consolidated text: Journal of Laws of 2024,
+                            item
+                            34, as amended).
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container mb-4 p-4 rounded shadow-lg">
+                <h3 class="text-center mb-4 text-danger-emphasis ">Summary</h3>
+                <div class="d-flex justify-content-between mb-3">
+                    <span class="font-weight-bold">Destination</span>
+                    <span class="fw-semibold destination">Albania</span>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                    <span class="font-weight-bold">Visa</span>
+                    <span class="fw-semibold summary-visa">Select a visa</span> <!-- سيتم تحديث هنا -->
+                </div>
+                <hr class="bg-white">
+                <div class="d-flex justify-content-between mb-3">
+                    <span class="font-weight-bold">Full price</span>
+                    <span class="fs-3 text-warning-emphasis fw-bolder summary-price">0.00 USD</span>
+                    <!-- سيتم تحديث هنا -->
+                </div>
+                <hr class="bg-white">
+                <p class="text-center mt-3">Price may vary depending on currency</p>
+            </div>
+
+
+            <div class="row mt-5">
+                <a href="../payment/payment.html"> <button class="btn btn-success w-100 py-3" type="submit">Submit &
+                        Pay</button></a>
+            </div>
+        </div>
+    </form>
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const visaName = sessionStorage.getItem('visaName');
+            const visaPrice = sessionStorage.getItem('visaPrice');
+            const destination = sessionStorage.getItem('destination');
+
+            if (visaName && visaPrice) {
+                // تحديث المعلومات في قسم "الملخص"
+                document.querySelector('.summary-visa').innerText = visaName;
+                document.querySelector('.summary-price').innerText = visaPrice;
+                document.querySelector('.destination').innerText = destination;
+            } else {
+                // إذا لم يتم تحديد تأشيرة، عرض رسالة توضح ذلك
+                document.querySelector('.summary-visa').innerText = 'No visa selected';
+                document.querySelector('.summary-price').innerText = '0.00 USD';
+            }
+        });
+
+
+
+    </script>
+
+
+</body>
+
+</html>
